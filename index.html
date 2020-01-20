@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Corina's notetaking Webapp</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Corina's notetaking Webapp</h1>
+  <h2 id="message"></h2>
+  <div id="nameForm" style="display:block;">
+    <input type="text" id="name" placeholder="Your name">
+    <input type="submit" onclick="submitName()" value="enter">
+  </div>
+  <script src="static/js/script.js" charset="utf-8"></script>
+  <div id="note">
+    <h3>Take a note:</h3>
+    <form action="/note" method="get" class="form">
+      <input type="text" id="itemInput" name="note" placeholder="take a note...">
+      <input type="submit" type="button" value="add item" id="addButton">
+    </form>
+    <form action="/search" method="get">
+      <input type="text" placeholder="search for a note..." id="search" name="query">
+      <input type="submit" value="search">
+    </form>
+    <a href="/results">See all notes</a>
+  </div>
+</body>
+
+</html>
