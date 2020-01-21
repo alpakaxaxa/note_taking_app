@@ -27,9 +27,4 @@ function showName() {
     }
     let message = greeting + name;
     messageElement.innerHTML = message;
-    //Display Note taking section
-    if (name === "") {
-        let note = document.getElementById("note");
-        note.style.display = "none";
-    }
 }
